@@ -1,0 +1,5 @@
+const articles = ["A fresh look at your financial goals", "Small steps, meaningful progress", "Making space for what matters"];
+
+export default function NewsPage() {
+    return <section className="mx-auto max-w-7xl px-5 py-16 sm:px-8 md:py-24 lg:px-10"><p className="text-sm font-bold uppercase tracking-[0.18em] text-[var(--brand)]">News</p><h1 className="mt-4 text-4xl font-bold text-[var(--brand-dark)] sm:text-5xl">Notes from Secondbank.</h1><div className="mt-12 grid gap-5 md:grid-cols-3">{articles.map((title, index) => <article key={title} className="border-t-2 border-[var(--brand)] pt-5"><p className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--muted)]">September {12 + index}, 2026</p><h2 className="mt-6 text-2xl font-bold leading-tight text-[var(--brand-dark)]">{title}</h2><p className="mt-4 text-sm leading-6 text-[var(--muted)]">A short placeholder description for a future article, update, or announcement.</p><a href="#" className="mt-6 inline-block text-sm font-bold text-[var(--brand)]">Read more →</a></article>)}</div></section>;
+}
